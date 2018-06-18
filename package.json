@@ -1,0 +1,36 @@
+{
+  "name": "polaroid-example",
+  "version": "0.5.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/machal/polaroid-example.git"
+  },
+  "contributors": [
+    {
+      "name": "Martin Michálek"
+    }
+  ],
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "grunt": "^1.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "jit-grunt": "^0.10.0",
+    "load-grunt-config": "^0.19.2",
+    "postcss": "^6.0.22",
+    "time-grunt": "^1.4.0"
+  },
+  "dependencies": {
+    "fancybox": "^3.0.1",
+    "jquery": "^3.3.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
