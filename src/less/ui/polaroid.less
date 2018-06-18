@@ -4,36 +4,34 @@ UI komponenta: Polaroid fotka
 */
 
 
-// Seznam fotek
-// ------------
-
-.polaroids {
-	.clearfix;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-
 // Fotka
 // -----
 
 // ### Zakladna
 
 .polaroid {
-  float: left;
-  width: 25%;
-  height: 180px;
+  text-align: center;
   padding: 10px 2.5%;
-  margin: 0 2.5% 20px 0;
   background-color: white;
   color: darkgrey;
+  margin-bottom: 20px;
 
 	a {
 	  color: #666;
 	  text-decoration: none;
 	}
 }
+
+.polaroid h2 {
+  font-weight: bold;
+  text-align: center;
+  font: 1.2rem/1.33 sans-serif;
+}
+
+.polaroid p {
+  margin-top: -0.5rem;
+}
+
 
 // ### Stav: aktivni
 
@@ -45,7 +43,7 @@ UI komponenta: Polaroid fotka
     background-color: #fcf883;
     background-color: rgba(100%, 100%, 100%, 1);
 
-    .polaroid__head {
+    h2 {
       color: black;
     }
   }
@@ -57,13 +55,5 @@ UI komponenta: Polaroid fotka
   &:target {
     background: yellow;
   }
-}
-
-// Blok: hlavicka
-
-.polaroid__head {
-  text-align: center;
-  font: 1rem/1.33 sans-serif;
-  font-weight: normal;
 }
 
