@@ -323,6 +323,30 @@ UI komponenta: Hlavicka
   text-align: center;
 }
 /*
+UI komponenta: Ikony
+====================
+*/
+.icon {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  color: #000;
+}
+.icon-inverted {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+/*
 UI komponenta: Paticka
 ======================
 */
@@ -415,31 +439,46 @@ UI komponenta: Polaroid fotka
 =============================
 */
 .polaroid {
-  display: inline-block;
-  width: 200px;
-  text-align: center;
-  padding: 10px 2.5%;
   background-color: white;
+  position: relative;
   color: darkgrey;
+  display: inline-block;
   margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
 }
 .polaroid a {
+  display: block;
   color: #666;
   text-decoration: none;
 }
-.polaroid h2 {
+.polaroid p:first-child {
+  margin-bottom: 0;
+}
+.polaroid .icon,
+.polaroid .icon-inverted {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.polaroid .content {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.polaroid .content h2 {
   font-weight: bold;
   text-align: center;
   font: 1.2rem/1.33 sans-serif;
 }
-.polaroid p {
+.polaroid .content p {
   margin-top: -0.5rem;
 }
 .polaroid:hover,
 .polaroid:focus,
 .polaroid:active,
 .polaroid--active {
-  background-color: #fcf883;
+  background-color: #FCB883;
   background-color: #ffffff;
 }
 .polaroid:hover h2,
@@ -450,6 +489,9 @@ UI komponenta: Polaroid fotka
 }
 .polaroid:target {
   background: yellow;
+}
+.no-js .polaroid {
+  border: 1px solid #999;
 }
 /*
 Layout stranky
