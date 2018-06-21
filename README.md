@@ -4,8 +4,6 @@ Autor: Martin Michálek, martin@vzhurudolu.cz
 
 ## Instalace projektu
 
-## Instalace projektu
-
 Ověřte si, zda v příkazové řádce máte:
 
 - [Git](https://git-scm.com/downloads): `git -v`
