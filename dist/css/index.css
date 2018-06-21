@@ -1,77 +1,3 @@
-/*
-HTML zakladna
-=============
-*/
-a img {
-  border: 0;
-}
-body {
-  font: 1rem/1.33 sans-serif;
-  background: #6d431f url('../../img/wood.png') repeat;
-  color: #fff;
-  margin: 1rem 1rem 0 1rem;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 0;
-}
-p {
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 1.33rem;
-}
-a {
-  color: #f00;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-top: 1px solid #ccc;
-}
-table td,
-table th {
-  text-align: left;
-  font-weight: normal;
-  border-bottom: 1px solid #ccc;
-  padding: .5rem .2rem .5rem 0;
-}
-table th {
-  color: #999;
-}
-/*
-Helper tridy
-============
-*/
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-/*
-Mixiny
-======
-*/
-.clearfix {
-  zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
@@ -315,6 +241,80 @@ Mixiny
   }
 }
 /*
+HTML zakladna
+=============
+*/
+a img {
+  border: 0;
+}
+body {
+  font: 1rem/1.33 sans-serif;
+  background: #6d431f url('../../img/wood.png') repeat;
+  color: #fff;
+  margin: 1rem 1rem 0 1rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 1.33rem;
+}
+a {
+  color: #f00;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #ccc;
+}
+table td,
+table th {
+  text-align: left;
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+  padding: .5rem .2rem .5rem 0;
+}
+table th {
+  color: #999;
+}
+/*
+Helper tridy
+============
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+/*
+Mixiny
+======
+*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
 UI komponenta: Hlavicka
 =======================
 */
@@ -407,7 +407,16 @@ UI komponenta: Navigace
 UI komponenta: Polaroid fotka
 =============================
 */
+.polaroids > * {
+  vertical-align: top;
+}
+/*
+UI komponenta: Polaroid fotka
+=============================
+*/
 .polaroid {
+  display: inline-block;
+  width: 200px;
   text-align: center;
   padding: 10px 2.5%;
   background-color: white;
