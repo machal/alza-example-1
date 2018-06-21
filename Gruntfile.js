@@ -89,6 +89,15 @@ module.exports = function(grunt) {
       }
     },
 
+    prettier: {
+      css: {
+        src: ["src/less/**/*.less", "!src/less/lib/**/*"]
+      },
+      js: {
+        src: ["Gruntfile.js", "src/js/*.js"]
+      }
+    },
+
     stylelint: {
       options: {
         syntax: "less"
