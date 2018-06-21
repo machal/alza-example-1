@@ -456,10 +456,9 @@ UI komponenta: Polaroid fotka
 .polaroid p:first-child {
   margin-bottom: 0;
 }
-.polaroid .icon,
-.polaroid .icon-inverted {
+.polaroid #icon {
   position: absolute;
-  top: 0;
+  top: 0pt;
   left: 0;
 }
 .polaroid .content {
