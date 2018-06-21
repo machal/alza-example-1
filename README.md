@@ -1,30 +1,30 @@
-# Příklad ke školení Dnešní webová kodéřina
+# Příklad ke školení CSS v Alza.cz
 
-https://www.vzhurudolu.cz/kurzy/webova-koderina
-
-**Autor:** Martin Michálek, martin@vzhurudolu.cz
+Autor: Martin Michálek, martin@vzhurudolu.cz
 
 ## Instalace projektu
 
-Nejprve si musíte nainstalovat [NPM a celý Node.js ekosystém](http://www.vzhurudolu.cz/prirucka/node-instalace).
+## Instalace projektu
 
-Pak tento konkrétní projekt:
+Ověřte si, zda v příkazové řádce máte:
+
+- [Git](https://git-scm.com/downloads): `git -v`
+- [NPM a celý Node.js ekosystém](https://www.vzhurudolu.cz/prirucka/node-instalace): `npm -v`
+
+Instalujte konkrétní projekt:
 
 ```bash
-# instalace Gruntu (pokud nemáte)
-npm install -g grunt-cli
-
 # naklonování projektu
-git clone https://github.com/machal/polaroid-example.git
+git clone https://github.com/machal/alza-example-1.git
 
 # skok do adresáře
-cd polaroid-example
+cd alza-example-1
 
 # instalace závislostí
 npm install
 
 # spuštění Gruntu - otevře okno prohlížeče s projektem
-grunt
+npx grunt
 ```
 
 ## Závislosti řešíme pomocí NPM
@@ -37,30 +37,25 @@ Vývojářské ([Grunt](http://www.vzhurudolu.cz/prirucka/grunt) a [pluginy](htt
 Důležité úlohy:
 
 * `grunt` - spustí vše a nastartuje vývojový server, otevře prohlížeč s nastartovanou synchronizací a pustí hlídání změn
-* Pro jednotlivé typy assetů se může hodit `grunt img`, `grunt css`.
 
-Konfigurace je v [Gruntfile.js](./Gruntfile.js) a složce `grunt/`.
+Konfigurace je v [Gruntfile.js](./Gruntfile.js).
 
 
 ## Struktura stylů
 
-* `src/css/index.less` – index stylů
-* `src/css/core/` – základy pro CSS: pomocné třídy…
-* `src/css/ui/` –  komponenty uživatelského rozhraní
-* `src/css/layout/` –  rozložení stránky
+* `src/less/index.less` – index stylů
+* `src/less/core/` – základy pro CSS: pomocné třídy…
+* `src/less/ui/` –  komponenty uživatelského rozhraní
+* `src/less/layout/` –  rozložení stránky
 
 Kompilujeme pomocí Grunt.js a PostCSS. Výsledkem je soubor `css/index.css`.
-
 
 ## Javascript
 
 * `js/index.js` – zdroj
-* `js/script.min.js` – výsledný Grunt.js kompilát
-
+* `js/script.min.js` – výsledný kompilát
 
 ---
-
-
 
 ## Zdroje fotek
 
